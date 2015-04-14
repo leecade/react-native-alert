@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-native-alert.svg)](http://badge.fury.io/js/react-native-alert)
 
-Use AlertIOS as a simple way just like native javascript.
+Use [AlertIOS](http://facebook.github.io/react-native/docs/alertios.html#content) as a simple way just like native javascript.
 
 ## INSTALL
 
