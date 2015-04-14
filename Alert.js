@@ -42,5 +42,7 @@ module.exports = function () {
     }
   })
 
-  return AlertIOS.alert(title, message, buttons)
+  return buttons.length
+    ? AlertIOS.alert(title, message, buttons)
+    ? AlertIOS.alert(title, message)
 }
