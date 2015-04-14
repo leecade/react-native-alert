@@ -1,5 +1,7 @@
 # react-native-alert
 
+[![npm version](https://badge.fury.io/js/react-native-alert.svg)](http://badge.fury.io/js/react-native-alert)
+
 Use AlertIOS as a simple way just like native javascript.
 
 ## INSTALL
