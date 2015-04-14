@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-native-alert.svg)](http://badge.fury.io/js/react-native-alert)
 
-Use AlertIOS as a simple way just like native javascript.
+Use [AlertIOS](http://facebook.github.io/react-native/docs/alertios.html#content) as a simple way just like native javascript.
 
 ## INSTALL
 
@@ -21,6 +21,10 @@ alert(123) // Number is allowed
 
 // With title
 alert('123', 'title')
+
+// With buttons
+alert('123', ['button'])
+alert('123', ['button', {text: 'alertButton', onPress: () => alert('ok')}])
 
 // Complete usage
 alert('title', '123', [

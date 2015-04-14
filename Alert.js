@@ -4,16 +4,6 @@ var {
   AlertIOS,
 } = React
 
-/*
-AlertIOS.alert(
-  'Foo Title',
-  'My Alert Msg',
-  [
-    {text: 'Foo', onPress: () => console.log('Foo Pressed!')},
-    {text: 'Bar', onPress: () => console.log('Bar Pressed!')},
-  ]
-)}
- */
 module.exports = function () {
   var title = ''
   var message = ''
@@ -21,13 +11,12 @@ module.exports = function () {
   var args = arguments
   var len = args.length
 
-  if(len == 1) {
-    message = args[0] + ''
-  }
+  message = args[0] + ''
 
   if(len == 2) {
-    if(args[1] + '' === args[1]) title = args[1]
-    if(Array.isArray(args[1])) buttons = args[1]
+    Array.isArray(args[1])
+      ? buttons = args[1]
+      : title = args[1] + ''
   }
 
   if(len > 2) {
@@ -36,13 +25,15 @@ module.exports = function () {
     buttons = args[2]
   }
 
-  if(buttons.length) buttons = buttons.map(function (li) {
-    if(li + '' === li) return {
-      text: li
-    }
-  })
-
-  return buttons.length
-    ? AlertIOS.alert(title, message, buttons)
-    ? AlertIOS.alert(title, message)
+  if(buttons.length) {
+    buttons = buttons.map(function (li) {
+      return li + '' === li
+        ? {
+            text: li
+          }
+        : li
+    })
+    return AlertIOS.alert(title, message, buttons)
+  }
+  return AlertIOS.alert(title, message)
 }
