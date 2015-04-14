@@ -1,0 +1,22 @@
+{
+  "name": "react-native-alert",
+  "version": "1.0.0",
+  "description": "Use AlertIOS as a simple way just like native javascript.",
+  "main": "Alert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leecade/react-native-alert.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leecade/react-native-alert/issues"
+  },
+  "homepage": "https://github.com/leecade/react-native-alert",
+  "dependencies": {
+    "react-native": "^0.3.11"
+  }
+}
