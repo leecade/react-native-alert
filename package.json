@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/leecade/react-native-alert",
   "dependencies": {
-    "react-native": "^0.3.11"
+    "react-native": "^0.36.1"
   }
 }
